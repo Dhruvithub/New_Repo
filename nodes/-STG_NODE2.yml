@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 9a0ae9a6-eb8a-4796-bc61-7092375d76d5
+name: STG_NODE2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ""
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns: []
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: ""
+            nodeName: STG_NODE
+        join:
+          joinCondition: FROM {{ ref('', 'STG_NODE') }} "STG_NODE"
+        name: STG_NODE2
+        noLinkRefs: []
+  name: STG_NODE2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
